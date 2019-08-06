@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chris Dornan - The Stupid Haskeller</title>
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="stylesheet" href="../css/syntax.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../">Chris Dornan</a>
+            </div>
+            <nav>
+                <a href="../contact.html">Contact</a>
+                <a href="../atom.xml">Atom</a>
+                <a href="../rss.xml">RSS</a>
+            </nav>
+        </header>
+
+        <main role="main">
+            <h1>The Stupid Haskeller</h1>
+<article>
+    <section class="header">
+        Posted on 2019-08-10
+        
+    </section>
+    <section>
+        <p>Mauris in lorem nisl. Maecenas tempus facilisis ante, eget viverra nisl tincidunt et. Donec turpis lectus, mattis ac malesuada a, accumsan eu libero. Morbi condimentum, tortor et tincidunt ullamcorper, sem quam pretium nulla, id convallis lectus libero nec turpis. Proin dapibus nisi id est sodales nec ultrices tortor pellentesque. Vivamus vel nisi ac lacus sollicitudin vulputate ac ut ligula. Nullam feugiat risus eget eros gravida in molestie sapien euismod. Nunc sed hendrerit orci. Nulla mollis consequat lorem ac blandit. Ut et turpis mauris. Nulla est odio, posuere id ullamcorper sit amet, tincidunt vel justo. Curabitur placerat tincidunt varius. Nulla vulputate, ipsum eu consectetur mollis, dui nibh aliquam neque, at ultricies leo ligula et arcu. Proin et mi eget tellus sodales lobortis. Sed tempor, urna vel pulvinar faucibus, lectus urna vehicula ante, at facilisis dolor odio at lorem. Morbi vehicula euismod urna, et imperdiet urna ornare vitae.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb1-1" title="1"><span class="co">--------------------------------------------------------------------------------</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="ot">{-# LANGUAGE OverloadedStrings #-}</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="kw">import</span>           <span class="dt">Data.Default</span></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="kw">import</span>           <span class="dt">Data.Monoid</span> (mappend)</a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="kw">import</span>           <span class="dt">Hakyll</span></a>
+<a class="sourceLine" id="cb1-6" title="6"></a>
+<a class="sourceLine" id="cb1-7" title="7"></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="co">--------------------------------------------------------------------------------</span></a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="ot">main ::</span> <span class="dt">IO</span> ()</a>
+<a class="sourceLine" id="cb1-10" title="10">main <span class="ot">=</span> hakyllWith cfg <span class="op">$</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-11" title="11">    match <span class="st">&quot;images/*&quot;</span> <span class="op">$</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-12" title="12">        route   idRoute</a>
+<a class="sourceLine" id="cb1-13" title="13">        compile copyFileCompiler</a>
+<a class="sourceLine" id="cb1-14" title="14"></a>
+<a class="sourceLine" id="cb1-15" title="15">    match <span class="st">&quot;css/*&quot;</span> <span class="op">$</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-16" title="16">        route   idRoute</a>
+<a class="sourceLine" id="cb1-17" title="17">        compile compressCssCompiler</a>
+<a class="sourceLine" id="cb1-18" title="18"></a>
+<a class="sourceLine" id="cb1-19" title="19">    match (fromList [<span class="st">&quot;about.rst&quot;</span>, <span class="st">&quot;contact.markdown&quot;</span>]) <span class="op">$</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-20" title="20">        route   <span class="op">$</span> setExtension <span class="st">&quot;html&quot;</span></a>
+<a class="sourceLine" id="cb1-21" title="21">        compile <span class="op">$</span> pandocCompiler</a>
+<a class="sourceLine" id="cb1-22" title="22">            <span class="op">&gt;&gt;=</span> loadAndApplyTemplate <span class="st">&quot;templates/default.html&quot;</span> defaultContext</a>
+<a class="sourceLine" id="cb1-23" title="23">            <span class="op">&gt;&gt;=</span> relativizeUrls</a>
+<a class="sourceLine" id="cb1-24" title="24"></a>
+<a class="sourceLine" id="cb1-25" title="25">    match <span class="st">&quot;posts/*&quot;</span> <span class="op">$</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-26" title="26">        route <span class="op">$</span> setExtension <span class="st">&quot;html&quot;</span></a>
+<a class="sourceLine" id="cb1-27" title="27">        compile <span class="op">$</span> pandocCompiler</a>
+<a class="sourceLine" id="cb1-28" title="28">            <span class="op">&gt;&gt;=</span> loadAndApplyTemplate <span class="st">&quot;templates/post.html&quot;</span>    postCtx</a>
+<a class="sourceLine" id="cb1-29" title="29">            <span class="op">&gt;&gt;=</span> loadAndApplyTemplate <span class="st">&quot;templates/default.html&quot;</span> postCtx</a>
+<a class="sourceLine" id="cb1-30" title="30">            <span class="op">&gt;&gt;=</span> relativizeUrls</a>
+<a class="sourceLine" id="cb1-31" title="31"></a>
+<a class="sourceLine" id="cb1-32" title="32">    create [<span class="st">&quot;archive.html&quot;</span>] <span class="op">$</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-33" title="33">        route idRoute</a>
+<a class="sourceLine" id="cb1-34" title="34">        compile <span class="op">$</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-35" title="35">            posts <span class="ot">&lt;-</span> recentFirst <span class="op">=&lt;&lt;</span> loadAll <span class="st">&quot;posts/*&quot;</span></a>
+<a class="sourceLine" id="cb1-36" title="36">            <span class="kw">let</span> archiveCtx <span class="ot">=</span></a>
+<a class="sourceLine" id="cb1-37" title="37">                    listField <span class="st">&quot;posts&quot;</span> postCtx (<span class="fu">return</span> posts) <span class="ot">`mappend`</span></a>
+<a class="sourceLine" id="cb1-38" title="38">                    constField <span class="st">&quot;title&quot;</span> <span class="st">&quot;Archives&quot;</span>            <span class="ot">`mappend`</span></a>
+<a class="sourceLine" id="cb1-39" title="39">                    defaultContext</a>
+<a class="sourceLine" id="cb1-40" title="40"></a>
+<a class="sourceLine" id="cb1-41" title="41">            makeItem <span class="st">&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-42" title="42">                <span class="op">&gt;&gt;=</span> loadAndApplyTemplate <span class="st">&quot;templates/archive.html&quot;</span> archiveCtx</a>
+<a class="sourceLine" id="cb1-43" title="43">                <span class="op">&gt;&gt;=</span> loadAndApplyTemplate <span class="st">&quot;templates/default.html&quot;</span> archiveCtx</a>
+<a class="sourceLine" id="cb1-44" title="44">                <span class="op">&gt;&gt;=</span> relativizeUrls</a>
+<a class="sourceLine" id="cb1-45" title="45"></a>
+<a class="sourceLine" id="cb1-46" title="46"></a>
+<a class="sourceLine" id="cb1-47" title="47">    match <span class="st">&quot;index.html&quot;</span> <span class="op">$</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-48" title="48">        route idRoute</a>
+<a class="sourceLine" id="cb1-49" title="49">        compile <span class="op">$</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-50" title="50">            posts <span class="ot">&lt;-</span> recentFirst <span class="op">=&lt;&lt;</span> loadAll <span class="st">&quot;posts/*&quot;</span></a>
+<a class="sourceLine" id="cb1-51" title="51">            <span class="kw">let</span> indexCtx <span class="ot">=</span></a>
+<a class="sourceLine" id="cb1-52" title="52">                    listField <span class="st">&quot;posts&quot;</span> postCtx (<span class="fu">return</span> posts) <span class="ot">`mappend`</span></a>
+<a class="sourceLine" id="cb1-53" title="53">                    constField <span class="st">&quot;title&quot;</span> <span class="st">&quot;Home&quot;</span>                <span class="ot">`mappend`</span></a>
+<a class="sourceLine" id="cb1-54" title="54">                    defaultContext</a>
+<a class="sourceLine" id="cb1-55" title="55"></a>
+<a class="sourceLine" id="cb1-56" title="56">            getResourceBody</a>
+<a class="sourceLine" id="cb1-57" title="57">                <span class="op">&gt;&gt;=</span> applyAsTemplate indexCtx</a>
+<a class="sourceLine" id="cb1-58" title="58">                <span class="op">&gt;&gt;=</span> loadAndApplyTemplate <span class="st">&quot;templates/default.html&quot;</span> indexCtx</a>
+<a class="sourceLine" id="cb1-59" title="59">                <span class="op">&gt;&gt;=</span> relativizeUrls</a>
+<a class="sourceLine" id="cb1-60" title="60"></a>
+<a class="sourceLine" id="cb1-61" title="61">    match <span class="st">&quot;templates/*&quot;</span> <span class="op">$</span> compile templateBodyCompiler</a>
+<a class="sourceLine" id="cb1-62" title="62"></a>
+<a class="sourceLine" id="cb1-63" title="63"></a>
+<a class="sourceLine" id="cb1-64" title="64"><span class="co">--------------------------------------------------------------------------------</span></a>
+<a class="sourceLine" id="cb1-65" title="65"><span class="ot">postCtx ::</span> <span class="dt">Context</span> <span class="dt">String</span></a>
+<a class="sourceLine" id="cb1-66" title="66">postCtx <span class="ot">=</span></a>
+<a class="sourceLine" id="cb1-67" title="67">    dateField <span class="st">&quot;date&quot;</span> <span class="st">&quot;%B %e, %Y&quot;</span> <span class="ot">`mappend`</span></a>
+<a class="sourceLine" id="cb1-68" title="68">    defaultContext</a>
+<a class="sourceLine" id="cb1-69" title="69"></a>
+<a class="sourceLine" id="cb1-70" title="70"><span class="co">--------------------------------------------------------------------------------</span></a>
+<a class="sourceLine" id="cb1-71" title="71"><span class="ot">cfg ::</span> <span class="dt">Configuration</span></a>
+<a class="sourceLine" id="cb1-72" title="72">cfg <span class="ot">=</span> def</a>
+<a class="sourceLine" id="cb1-73" title="73">  { previewHost <span class="ot">=</span> <span class="st">&quot;0.0.0.0&quot;</span></a>
+<a class="sourceLine" id="cb1-74" title="74">  , previewPort <span class="ot">=</span> <span class="dv">8000</span></a>
+<a class="sourceLine" id="cb1-75" title="75">  }</a></code></pre></div>
+<p>Sed tincidunt sollicitudin ultrices. In hac habitasse platea dictumst. Morbi ligula lectus, egestas at ultricies nec, fringilla et tellus. Duis urna lorem, bibendum a ornare sed, euismod sed nunc. Aliquam tempor massa at velit fringilla fringilla. Praesent sit amet tempor felis. Maecenas id felis ac velit aliquam tempor a sit amet orci. Nunc placerat nulla pellentesque sem commodo cursus. Praesent quis sapien orci, quis ultricies augue. Nam vestibulum sem non augue semper tincidunt pellentesque ipsum volutpat. Duis congue, nunc a aliquam luctus, quam ante convallis nisi, ac pellentesque lacus orci vel turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse hendrerit nisl eu felis sagittis faucibus. Nunc eu congue lorem. Quisque non nibh nisi, et ultrices massa. Sed vitae erat vitae nulla pellentesque fermentum.</p>
+<p>Ut diam nunc, consectetur ut ultrices eu, iaculis sed felis. Sed lacinia, odio et accumsan luctus, arcu ipsum accumsan erat, sit amet malesuada libero lacus et velit. Donec accumsan tristique tristique. Proin a metus magna, vitae mattis nisl. Integer a libero ipsum. Mauris faucibus eleifend metus id sodales. Morbi ornare, nibh nec facilisis imperdiet, turpis sem commodo lorem, id commodo mauris metus vitae justo. Etiam at pellentesque tortor. Proin mollis accumsan ligula, nec tempus augue auctor quis. Nulla lacinia, mi quis lobortis auctor, nisi diam posuere dui, pulvinar feugiat dui libero eget quam. Fusce eu risus nunc, a consectetur orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas venenatis aliquet orci, a ultricies sem facilisis eu. Donec dolor purus, porta condimentum convallis nec, dignissim nec libero.</p>
+<p>Etiam rutrum ultricies dui, et interdum metus elementum et. Nulla sapien nunc, interdum tristique porttitor in, laoreet vitae mi. Ut vehicula auctor mauris sit amet bibendum. Phasellus adipiscing mattis libero, eget adipiscing erat dignissim at. Vivamus convallis malesuada metus nec cursus. Ut cursus, lorem eleifend sollicitudin condimentum, felis tortor sodales augue, ac tempus lacus ipsum vitae quam. Vestibulum vitae lacus non tortor vehicula iaculis faucibus quis massa.</p>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis malesuada neque nec ante porttitor accumsan. Suspendisse potenti. Aliquam in lacus magna, imperdiet laoreet lectus. Praesent id diam nec ante commodo rhoncus nec vel augue. Pellentesque tortor massa, dignissim ut sagittis sed, hendrerit vitae nunc. Nam gravida, urna vitae hendrerit rutrum, felis augue vulputate tortor, ut varius velit libero nec lectus. In adipiscing massa in est scelerisque ullamcorper. Vivamus in nisi metus.</p>
+    </section>
+</article>
+
+<div id="disqus_thread"></div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+var disqus_config = function () {
+this.page.url = "http://xhrisdornan.com//posts/2019-08-10-stupid.html";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "posts/2019-08-10-stupid.markdown"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://chris-dornan.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </main>
+
+        <footer>
+        </footer>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145166163-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-145166163-1');
+        </script>
+    </body>
+</html>

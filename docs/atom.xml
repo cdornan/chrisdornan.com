@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>chrisdornan.com</title>
+    <link href="http://chrisdornan.com/atom.xml" rel="self" />
+    <link href="http://chrisdornan.com" />
+    <id>http://chrisdornan.com/atom.xml</id>
+    <author>
+        <name>Chris Dornan</name>
+        <email>chris@chrisdornan.com</email>
+    </author>
+    <updated>2019-08-15T00:00:00Z</updated>
+    <entry>
+    <title>Columnar</title>
+    <link href="http://chrisdornan.com/posts/2019-08-15-colm.html" />
+    <id>http://chrisdornan.com/posts/2019-08-15-colm.html</id>
+    <published>2019-08-15T00:00:00Z</published>
+    <updated>2019-08-15T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>Enumerating Blessings</title>
+    <link href="http://chrisdornan.com/posts/2019-08-14-enum.html" />
+    <id>http://chrisdornan.com/posts/2019-08-14-enum.html</id>
+    <published>2019-08-14T00:00:00Z</published>
+    <updated>2019-08-14T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>Talking Text</title>
+    <link href="http://chrisdornan.com/posts/2019-08-11-textese.html" />
+    <id>http://chrisdornan.com/posts/2019-08-11-textese.html</id>
+    <published>2019-08-11T00:00:00Z</published>
+    <updated>2019-08-11T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>The Stupid Haskeller</title>
+    <link href="http://chrisdornan.com/posts/2019-08-10-stupid.html" />
+    <id>http://chrisdornan.com/posts/2019-08-10-stupid.html</id>
+    <published>2019-08-10T00:00:00Z</published>
+    <updated>2019-08-10T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+
+</feed>
