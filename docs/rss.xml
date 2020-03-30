@@ -7,8 +7,16 @@
         <description><![CDATA[Chris Dornan's blog]]></description>
         <atom:link href="http://chrisdornan.com/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Sun, 29 Mar 2020 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Mon, 30 Mar 2020 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Why Haskell Matters</title>
+    <link>http://chrisdornan.com/posts/2020-03-03-matters.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Mon, 30 Mar 2020 00:00:00 UT</pubDate>
+    <guid>http://chrisdornan.com/posts/2020-03-03-matters.html</guid>
+    <dc:creator>Chris Dornan</dc:creator>
+</item>
+<item>
     <title>The Stupid Haskeller</title>
     <link>http://chrisdornan.com/posts/2020-03-29-stupid.html</link>
     <description><![CDATA[This is the post description]]></description>

@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Chris Dornan - Archives</title>
+        <title>Chris Dornan - Why Haskell Matters</title>
         <link rel="stylesheet" href="../assets/scss/site.css" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -31,23 +31,26 @@
 
         <main uk-height-viewport="expand: true">
           <div class="uk-container cd-article-container cd-running-font">
-            <h1>Archives</h1>
-
-<!-- <table class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-table-large"> -->
-<table class="uk-table uk-table-divider uk-table-large">
-    <tbody>
+            <article class="uk-article">
+    <h1 class="uk-article-title">Why Haskell Matters</h1>
+    <p class="uk-article-meta">
+        Posted on 2020-03-30
         
-            <tr class="uk-text-large">
-                <td style="width:8em;">2020-03-29</td><td><a href="../posts/2020-03-29-stupid.html">The Stupid Haskeller</a></td>
-            </tr>
-        
-            <tr class="uk-text-large">
-                <td style="width:8em;">2020-03-30</td><td><a href="../posts/2020-03-03-matters.html">Why Haskell Matters</a></td>
-            </tr>
-        
-    </tbody>
-</table>
-
+    </p>
+    <p>If you have not read the classic 1990 John Hughes paper <a href="https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf">Why Functional Programming Matters</a> I urge you to do so. I won’t try to reproduce it here but assume you are familiar with its central thesis that pure, non-strict functions (of the kind that Haskell is interested in) are easier to compose, making their functional programs more scalable than procedural equivalents.</p>
+<p>It all makes for a great read, but is it really true?</p>
+<p>Everybody at the time felt it was true, and exhilaratingly so. But as the years have gone by with the widespread adoption of higher level programming systems like Ruby and Python I have noticed that the game has changed. These new systems provide many of the structures that could be used to express Hughes’s examples reasonably directly. Often my Rubyist colleagues would focus on how similar Ruby and Haskell were at their core once you got past the surface syntax, which only made me feel that they were missing the point.</p>
+<h2 id="static-types">Static Types</h2>
+<p>Programming Ruby is nothing like programming Haskell because of the static types of course. To illustrate this I took our most senior consultant Rubyist through a modest extension of our model’s API, modifying one of the the underlying types and listening to an audible gasp as the compiler marched me round the code base pointing the lines to change. At the next stand-up he explained that he now understood why we were using Haskell.</p>
+<p>This is all old hat to contemporary Haskellers — by constructing your codebase with modern techniques you can enlist the type checker to maintain its coherence at scale as it evolves. Hindley-Milner type checkers came out of theorem proving and they allow us to apply logic at acale across the code base to adapt it to maintain its coherence.</p>
+<p>Of all of the programming languages that are widely used at scale Haskell has the most well-developed static type system. That is why Haskell has the greatest potential for writing scalable code bases. That is why Haskell matters.</p>
+<p>The thing is that this wasn’t really Hughes’s thesis. Does it matter?</p>
+    <hr>
+    <p><i>Got an issue with any of this?</i>
+       <a href="https://github.com/cdornan/cd-blog/issues/4">Please share</a>
+       or drop me a line (see below).
+<div class="uk-margin-small-top"></div>
+</article>
 
           </div>
         </main>
