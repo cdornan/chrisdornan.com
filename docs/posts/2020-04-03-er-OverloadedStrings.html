@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Chris Dornan - Hell</title>
+        <title>Chris Dornan - OverloadedStrings</title>
         <link rel="stylesheet" href="../assets/scss/site.css" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -48,17 +48,58 @@
         <main uk-height-viewport="expand: true">
           <div class="uk-container cd-article-container cd-running-font">
             <article class="uk-article">
-    <h1 class="uk-article-title">Hell</h1>
+    <h1 class="uk-article-title">OverloadedStrings</h1>
     <p class="uk-article-meta">
-        Posted on 2020-04-01
+        Posted on 2020-04-03
         
     </p>
-    
-    <p>Five years ago <em>cabal hell</em> was all the rage, but no more.</p>
-<p>Just saying.</p>
+    <hr />
+<div class="cd-er-row"><div class="cd-er-name">OverloadedStrings</div>
+<div class="cd-er-date"><a title="review article" href="../posts/2020-04-03-er-OverloadedStrings.html">2020-04-03</a></div>
+<div class="cd-er-home"><a title="GHC notes" href="https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/glasgow_exts.html#overloaded-string-literals"><span uk-icon="home"></span></a></div>
+<a title="review article" class="cd-er-block-link" href="../posts/2020-04-03-er-OverloadedStrings.html">
+<div class="cd-er-strs">
+<svg height="25" width="23" class="cd-star">
+  <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero; fill: #ffd055;"></polygon>
+</svg>
+<svg height="25" width="23" class="cd-star">
+  <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero; fill: #ffd055;"></polygon>
+</svg>
+<svg height="25" width="23" class="cd-star">
+  <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero; fill: #ffd055;"></polygon>
+</svg>
+<svg height="25" width="23" class="cd-star">
+  <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero; fill: #ffd055;"></polygon>
+</svg>
+<svg height="25" width="23" class="cd-star">
+  <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero; fill: #ffd055;"></polygon>
+</svg>
+<svg height="25" width="23" class="cd-star">
+  <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero; fill: #222222; visibility: hidden;"></polygon>
+</svg>
+</div>
+</a>
+</div>
+<hr />
+
+    <p>With this extension classic string literals (of type <code>[Char]</code>) gets wrapped in the <code>fromString</code> from the <code>IsString</code> class in <code>Data.String</code>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">class</span> <span class="dt">IsString</span> a <span class="kw">where</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="ot">  fromString ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> a</span></code></pre></div>
+<p>So, for example, this,</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1"></a><span class="ot">{-# LANGUAGE OverloadedStrings #-}</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="kw">import</span> <span class="dt">Data.Text</span> <span class="kw">as</span> <span class="dt">T</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a>main <span class="ot">=</span> T.putStrLn <span class="st">&quot;this is a string&quot;</span></span></code></pre></div>
+<p>would get turned into this:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">import</span> <span class="dt">Data.String</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">import</span> <span class="dt">Data.Text</span> <span class="kw">as</span> <span class="dt">T</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4"></a>main <span class="ot">=</span> T.putStrLn (fromString <span class="st">&quot;this is a string&quot;</span>)</span></code></pre></div>
+<p>Got a type that wants to join the party and be representable by strings? Then make it an instance <code>IsString</code>.</p>
+<p>Should probably be always on in Haskell 2020.</p>
     <hr>
     <p><i>Got an issue with any of this?</i>
-       <a href="https://github.com/cdornan/cd-blog/issues/6">Please share</a>
+       <a href="https://github.com/cdornan/cd-blog/issues/8">Please share</a>
        or drop me a line (see below).
 <div class="uk-margin-small-top"></div>
 </article>

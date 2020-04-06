@@ -12,19 +12,35 @@
     </head>
     <body>
         <header class="uk-section-secondary" uk-sticky>
-        <nav class="uk-navbar" style="display: flex; justify-content: space-between;">
+
+    <nav class="uk-navbar" uk-navbar style="display: flex; justify-content: space-between;">
+        <ul class="uk-navbar-nav">
+            <li><a href="../"><span uk-icon="home"></span>&nbsp;Chris Dornan</a></li>
+        </ul>
+        <div class="uk-navbar-flip">
             <ul class="uk-navbar-nav">
-                <li><a href="../"><span uk-icon="home"></span>&nbsp;Chris Dornan</a></li>
+                <li><a href="../pages/about.html"><span uk-icon="info"></span>&nbsp;About</a></li>
+                <li>
+                    <a href="#"><span uk-icon="menu"></span>Series</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a class="cd-nav-dropdown-a" href="../pages/extension-reviews.html">Extension Reviews</a></li>
+                        </ul>
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a class="cd-nav-dropdown-a" href="../pages/package-reviews.html">Package Reviews</a></li>
+                        </ul>
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a class="cd-nav-dropdown-a" href="../pages/structure-reviews.html">Structure Reviews</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="../pages/archive.html"><span uk-icon="database"></span>&nbsp;Archives</a></li>
+                <li><a href="../rss.xml"><span uk-icon="rss"></span>&nbsp;RSS</a></li>
+                <li><a href="../atom.xml"><span uk-icon="rss"></span>&nbsp;Atom</a></li>
             </ul>
-            <div class="uk-navbar-flip">
-                <ul class="uk-navbar-nav">
-                    <li><a href="../pages/about.html"><span uk-icon="info"></span>&nbsp;About</a></li>
-                    <li><a href="../pages/archive.html"><span uk-icon="database"></span>&nbsp;Archives</a></li>
-                    <li><a href="../rss.xml"><span uk-icon="rss"></span>&nbsp;RSS </a></li>
-                    <li><a href="../atom.xml"><span uk-icon="rss"></span>&nbsp;Atom</a></li>
-                </ul>
-            </div>
-        </nav>
+        </div>
+    </nav>
+
 </header>
 <div class="uk-margin"></div>
 
@@ -37,6 +53,7 @@
         Posted on 2020-03-31
         
     </p>
+    
     <p>Heading through the fourth decade and the default Haskell type for representing text is <em>still</em> the venerable, naive <code>[Char]</code> with it’s dire <em>continental-drift</em> performance. Instead of sorting this all out we have at least five different central types for representing text.</p>
 <p>And it is not for a want of trying! There is the <code>Foundation</code> <a href="https://hackage.haskell.org/package/foundation-0.0.25/docs/Foundation-String.html#t:String"><code>String</code></a> type, <a href="https://hackage.haskell.org/package/text-utf8">text-utf8 Text</a> and <a href="https://hackage.haskell.org/package/rio-0.1.14.1/docs/RIO.html#t:Utf8Builder">Utf8Builder</a> from <code>RIO</code> being the most recent initiatives.</p>
 <p>That last idea is a beautiful, brilliant proposal though: <code>newtype</code>-wrapping a Utf8-encoded <code>ByteString</code> builder. Everything is right there hiding in plain sight, just requiring some gentle organisation.</p>
@@ -86,7 +103,8 @@
 
           gtag('config', 'UA-145166163-1');
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+        <script src="https://getuikit.com/assets/uikit/dist/js/uikit.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.7/js/uikit.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.7/js/uikit-icons.min.js"></script>
     </body>
 </html>

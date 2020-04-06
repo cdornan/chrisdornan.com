@@ -12,19 +12,35 @@
     </head>
     <body>
         <header class="uk-section-secondary" uk-sticky>
-        <nav class="uk-navbar" style="display: flex; justify-content: space-between;">
+
+    <nav class="uk-navbar" uk-navbar style="display: flex; justify-content: space-between;">
+        <ul class="uk-navbar-nav">
+            <li><a href="../"><span uk-icon="home"></span>&nbsp;Chris Dornan</a></li>
+        </ul>
+        <div class="uk-navbar-flip">
             <ul class="uk-navbar-nav">
-                <li><a href="../"><span uk-icon="home"></span>&nbsp;Chris Dornan</a></li>
+                <li><a href="../pages/about.html"><span uk-icon="info"></span>&nbsp;About</a></li>
+                <li>
+                    <a href="#"><span uk-icon="menu"></span>Series</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a class="cd-nav-dropdown-a" href="../pages/extension-reviews.html">Extension Reviews</a></li>
+                        </ul>
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a class="cd-nav-dropdown-a" href="../pages/package-reviews.html">Package Reviews</a></li>
+                        </ul>
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a class="cd-nav-dropdown-a" href="../pages/structure-reviews.html">Structure Reviews</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="../pages/archive.html"><span uk-icon="database"></span>&nbsp;Archives</a></li>
+                <li><a href="../rss.xml"><span uk-icon="rss"></span>&nbsp;RSS</a></li>
+                <li><a href="../atom.xml"><span uk-icon="rss"></span>&nbsp;Atom</a></li>
             </ul>
-            <div class="uk-navbar-flip">
-                <ul class="uk-navbar-nav">
-                    <li><a href="../pages/about.html"><span uk-icon="info"></span>&nbsp;About</a></li>
-                    <li><a href="../pages/archive.html"><span uk-icon="database"></span>&nbsp;Archives</a></li>
-                    <li><a href="../rss.xml"><span uk-icon="rss"></span>&nbsp;RSS </a></li>
-                    <li><a href="../atom.xml"><span uk-icon="rss"></span>&nbsp;Atom</a></li>
-                </ul>
-            </div>
-        </nav>
+        </div>
+    </nav>
+
 </header>
 <div class="uk-margin"></div>
 
@@ -37,6 +53,7 @@
         Posted on 2020-03-30
         
     </p>
+    
     <p>If you have not read the classic 1990 John Hughes paper <a href="https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf">Why Functional Programming Matters</a> I urge you to do so. I won’t try to reproduce it here but assume you are familiar with its central thesis that pure, non-strict functions (of the kind that Haskell is interested in) are easier to compose, making their functional programs more scalable than procedural equivalents.</p>
 <p>It all makes for a great read, but is it really true?</p>
 <p>Everybody at the time felt it was true, and exhilaratingly so. But as the years have gone by with the widespread adoption of higher level programming systems like Ruby and Python I have noticed that the game has changed. These new systems provide many of the structures that could be used to express Hughes’s examples reasonably directly. Often my Rubyist colleagues would focus on how similar Ruby and Haskell were at their core once you got past the surface syntax, which only made me feel that they were missing the point.</p>
@@ -89,7 +106,8 @@
 
           gtag('config', 'UA-145166163-1');
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+        <script src="https://getuikit.com/assets/uikit/dist/js/uikit.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.7/js/uikit.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.7/js/uikit-icons.min.js"></script>
     </body>
 </html>

@@ -8,8 +8,40 @@
         <name>Chris Dornan</name>
         <email>chris@chrisdornan.com</email>
     </author>
-    <updated>2020-04-01T00:00:00Z</updated>
+    <updated>2020-04-05T00:00:00Z</updated>
     <entry>
+    <title>Functor</title>
+    <link href="http://chrisdornan.com/posts/2020-04-05-sr-Functor.html" />
+    <id>http://chrisdornan.com/posts/2020-04-05-sr-Functor.html</id>
+    <published>2020-04-05T00:00:00Z</published>
+    <updated>2020-04-05T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>data-default</title>
+    <link href="http://chrisdornan.com/posts/2020-04-04-pr-data-default.html" />
+    <id>http://chrisdornan.com/posts/2020-04-04-pr-data-default.html</id>
+    <published>2020-04-04T00:00:00Z</published>
+    <updated>2020-04-04T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>OverloadedStrings</title>
+    <link href="http://chrisdornan.com/posts/2020-04-03-er-OverloadedStrings.html" />
+    <id>http://chrisdornan.com/posts/2020-04-03-er-OverloadedStrings.html</id>
+    <published>2020-04-03T00:00:00Z</published>
+    <updated>2020-04-03T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>New Rules</title>
+    <link href="http://chrisdornan.com/posts/2020-04-02-series.html" />
+    <id>http://chrisdornan.com/posts/2020-04-02-series.html</id>
+    <published>2020-04-02T00:00:00Z</published>
+    <updated>2020-04-02T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
     <title>Hell</title>
     <link href="http://chrisdornan.com/posts/2020-04-01-hell.html" />
     <id>http://chrisdornan.com/posts/2020-04-01-hell.html</id>

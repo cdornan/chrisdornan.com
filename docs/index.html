@@ -12,48 +12,84 @@
     </head>
     <body>
         <header class="uk-section-secondary" uk-sticky>
-        <nav class="uk-navbar" style="display: flex; justify-content: space-between;">
+
+    <nav class="uk-navbar" uk-navbar style="display: flex; justify-content: space-between;">
+        <ul class="uk-navbar-nav">
+            <li><a href="./"><span uk-icon="home"></span>&nbsp;Chris Dornan</a></li>
+        </ul>
+        <div class="uk-navbar-flip">
             <ul class="uk-navbar-nav">
-                <li><a href="./"><span uk-icon="home"></span>&nbsp;Chris Dornan</a></li>
+                <li><a href="./pages/about.html"><span uk-icon="info"></span>&nbsp;About</a></li>
+                <li>
+                    <a href="#"><span uk-icon="menu"></span>Series</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a class="cd-nav-dropdown-a" href="./pages/extension-reviews.html">Extension Reviews</a></li>
+                        </ul>
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a class="cd-nav-dropdown-a" href="./pages/package-reviews.html">Package Reviews</a></li>
+                        </ul>
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a class="cd-nav-dropdown-a" href="./pages/structure-reviews.html">Structure Reviews</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="./pages/archive.html"><span uk-icon="database"></span>&nbsp;Archives</a></li>
+                <li><a href="./rss.xml"><span uk-icon="rss"></span>&nbsp;RSS</a></li>
+                <li><a href="./atom.xml"><span uk-icon="rss"></span>&nbsp;Atom</a></li>
             </ul>
-            <div class="uk-navbar-flip">
-                <ul class="uk-navbar-nav">
-                    <li><a href="./pages/about.html"><span uk-icon="info"></span>&nbsp;About</a></li>
-                    <li><a href="./pages/archive.html"><span uk-icon="database"></span>&nbsp;Archives</a></li>
-                    <li><a href="./rss.xml"><span uk-icon="rss"></span>&nbsp;RSS </a></li>
-                    <li><a href="./atom.xml"><span uk-icon="rss"></span>&nbsp;Atom</a></li>
-                </ul>
-            </div>
-        </nav>
+        </div>
+    </nav>
+
 </header>
 <div class="uk-margin"></div>
 
 
         <main uk-height-viewport="expand: true">
           <div class="uk-container cd-article-container cd-running-font">
-            <h2>Posts</h2>
-<!-- <table class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-table-large"> -->
+            <article class="uk-article">
+    <h1 class="uk-article-title">Posts</h1>
+
 <table class="uk-table uk-table-divider uk-table-large">
     <tbody>
         
             <tr class="uk-text-large">
-                <td style="width:8em;">2020-04-01</td><td><a href="./posts/2020-04-01-hell.html">Hell</a></td>
+                <td style="width:6em;">2020-04-05</td><td><a href="./posts/2020-04-05-sr-Functor.html">Functor</a></td>
             </tr>
         
             <tr class="uk-text-large">
-                <td style="width:8em;">2020-03-31</td><td><a href="./posts/2020-03-31-stringing.html">Stringing Along</a></td>
+                <td style="width:6em;">2020-04-04</td><td><a href="./posts/2020-04-04-pr-data-default.html">data-default</a></td>
             </tr>
         
             <tr class="uk-text-large">
-                <td style="width:8em;">2020-03-30</td><td><a href="./posts/2020-03-30-matters.html">Why Haskell Matters</a></td>
+                <td style="width:6em;">2020-04-03</td><td><a href="./posts/2020-04-03-er-OverloadedStrings.html">OverloadedStrings</a></td>
             </tr>
         
             <tr class="uk-text-large">
-                <td style="width:8em;">2020-03-29</td><td><a href="./posts/2020-03-29-stupid.html">The Stupid Haskeller</a></td>
+                <td style="width:6em;">2020-04-02</td><td><a href="./posts/2020-04-02-series.html">New Rules</a></td>
+            </tr>
+        
+            <tr class="uk-text-large">
+                <td style="width:6em;">2020-04-01</td><td><a href="./posts/2020-04-01-hell.html">Hell</a></td>
+            </tr>
+        
+            <tr class="uk-text-large">
+                <td style="width:6em;">2020-03-31</td><td><a href="./posts/2020-03-31-stringing.html">Stringing Along</a></td>
+            </tr>
+        
+            <tr class="uk-text-large">
+                <td style="width:6em;">2020-03-30</td><td><a href="./posts/2020-03-30-matters.html">Why Haskell Matters</a></td>
+            </tr>
+        
+            <tr class="uk-text-large">
+                <td style="width:6em;">2020-03-29</td><td><a href="./posts/2020-03-29-stupid.html">The Stupid Haskeller</a></td>
             </tr>
         
     </tbody>
 </table>
+
+<div class="uk-margin-small-top"></div>
+</article>
 
 
           </div>
@@ -93,7 +129,8 @@
 
           gtag('config', 'UA-145166163-1');
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+        <script src="https://getuikit.com/assets/uikit/dist/js/uikit.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.7/js/uikit.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.7/js/uikit-icons.min.js"></script>
     </body>
 </html>

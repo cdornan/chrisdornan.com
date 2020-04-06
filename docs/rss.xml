@@ -7,8 +7,40 @@
         <description><![CDATA[Chris Dornan's blog]]></description>
         <atom:link href="http://chrisdornan.com/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Wed, 01 Apr 2020 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Sun, 05 Apr 2020 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Functor</title>
+    <link>http://chrisdornan.com/posts/2020-04-05-sr-Functor.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Sun, 05 Apr 2020 00:00:00 UT</pubDate>
+    <guid>http://chrisdornan.com/posts/2020-04-05-sr-Functor.html</guid>
+    <dc:creator>Chris Dornan</dc:creator>
+</item>
+<item>
+    <title>data-default</title>
+    <link>http://chrisdornan.com/posts/2020-04-04-pr-data-default.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Sat, 04 Apr 2020 00:00:00 UT</pubDate>
+    <guid>http://chrisdornan.com/posts/2020-04-04-pr-data-default.html</guid>
+    <dc:creator>Chris Dornan</dc:creator>
+</item>
+<item>
+    <title>OverloadedStrings</title>
+    <link>http://chrisdornan.com/posts/2020-04-03-er-OverloadedStrings.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Fri, 03 Apr 2020 00:00:00 UT</pubDate>
+    <guid>http://chrisdornan.com/posts/2020-04-03-er-OverloadedStrings.html</guid>
+    <dc:creator>Chris Dornan</dc:creator>
+</item>
+<item>
+    <title>New Rules</title>
+    <link>http://chrisdornan.com/posts/2020-04-02-series.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Thu, 02 Apr 2020 00:00:00 UT</pubDate>
+    <guid>http://chrisdornan.com/posts/2020-04-02-series.html</guid>
+    <dc:creator>Chris Dornan</dc:creator>
+</item>
+<item>
     <title>Hell</title>
     <link>http://chrisdornan.com/posts/2020-04-01-hell.html</link>
     <description><![CDATA[This is the post description]]></description>

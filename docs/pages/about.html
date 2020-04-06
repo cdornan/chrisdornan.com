@@ -12,19 +12,35 @@
     </head>
     <body>
         <header class="uk-section-secondary" uk-sticky>
-        <nav class="uk-navbar" style="display: flex; justify-content: space-between;">
+
+    <nav class="uk-navbar" uk-navbar style="display: flex; justify-content: space-between;">
+        <ul class="uk-navbar-nav">
+            <li><a href="../"><span uk-icon="home"></span>&nbsp;Chris Dornan</a></li>
+        </ul>
+        <div class="uk-navbar-flip">
             <ul class="uk-navbar-nav">
-                <li><a href="../"><span uk-icon="home"></span>&nbsp;Chris Dornan</a></li>
+                <li><a href="../pages/about.html"><span uk-icon="info"></span>&nbsp;About</a></li>
+                <li>
+                    <a href="#"><span uk-icon="menu"></span>Series</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a class="cd-nav-dropdown-a" href="../pages/extension-reviews.html">Extension Reviews</a></li>
+                        </ul>
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a class="cd-nav-dropdown-a" href="../pages/package-reviews.html">Package Reviews</a></li>
+                        </ul>
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a class="cd-nav-dropdown-a" href="../pages/structure-reviews.html">Structure Reviews</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="../pages/archive.html"><span uk-icon="database"></span>&nbsp;Archives</a></li>
+                <li><a href="../rss.xml"><span uk-icon="rss"></span>&nbsp;RSS</a></li>
+                <li><a href="../atom.xml"><span uk-icon="rss"></span>&nbsp;Atom</a></li>
             </ul>
-            <div class="uk-navbar-flip">
-                <ul class="uk-navbar-nav">
-                    <li><a href="../pages/about.html"><span uk-icon="info"></span>&nbsp;About</a></li>
-                    <li><a href="../pages/archive.html"><span uk-icon="database"></span>&nbsp;Archives</a></li>
-                    <li><a href="../rss.xml"><span uk-icon="rss"></span>&nbsp;RSS </a></li>
-                    <li><a href="../atom.xml"><span uk-icon="rss"></span>&nbsp;Atom</a></li>
-                </ul>
-            </div>
-        </nav>
+        </div>
+    </nav>
+
 </header>
 <div class="uk-margin"></div>
 
@@ -37,6 +53,7 @@
         Posted on 2020-03-29
         
     </p>
+    
     <p>This is my personal blog where I generally write about <a href="https://www.haskell.org/">Haskell</a> development, and (perhaps) some other things.</p>
 <p>I work for IRIS Connect where I helped to develop their video platform which makes extensive use of Haskell in its back end (the web app being built on Rails).</p>
 <p>I also work as a volunteer curator on <a href="https://www.stackage.org/">Stackage</a> and write Haskell in my spare time.</p>
@@ -85,7 +102,8 @@
 
           gtag('config', 'UA-145166163-1');
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+        <script src="https://getuikit.com/assets/uikit/dist/js/uikit.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.7/js/uikit.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.7/js/uikit-icons.min.js"></script>
     </body>
 </html>
