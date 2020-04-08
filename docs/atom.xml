@@ -18,6 +18,14 @@
     <summary type="html"><![CDATA[This is the post description]]></summary>
 </entry>
 <entry>
+    <title>Getting your Version</title>
+    <link href="http://chrisdornan.com/posts/2020-04-07-versions.html" />
+    <id>http://chrisdornan.com/posts/2020-04-07-versions.html</id>
+    <published>2020-04-07T00:00:00Z</published>
+    <updated>2020-04-07T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
     <title>Pointless Style</title>
     <link href="http://chrisdornan.com/posts/2020-04-06-pointless.html" />
     <id>http://chrisdornan.com/posts/2020-04-06-pointless.html</id>
@@ -79,14 +87,6 @@
     <id>http://chrisdornan.com/posts/2020-03-30-matters.html</id>
     <published>2020-03-30T00:00:00Z</published>
     <updated>2020-03-30T00:00:00Z</updated>
-    <summary type="html"><![CDATA[This is the post description]]></summary>
-</entry>
-<entry>
-    <title>The Stupid Haskeller</title>
-    <link href="http://chrisdornan.com/posts/2020-03-29-stupid.html" />
-    <id>http://chrisdornan.com/posts/2020-03-29-stupid.html</id>
-    <published>2020-03-29T00:00:00Z</published>
-    <updated>2020-03-29T00:00:00Z</updated>
     <summary type="html"><![CDATA[This is the post description]]></summary>
 </entry>
 
