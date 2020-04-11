@@ -7,8 +7,32 @@
         <description><![CDATA[Chris Dornan's blog]]></description>
         <atom:link href="http://chrisdornan.com/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Wed, 08 Apr 2020 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Sat, 11 Apr 2020 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Cabal or Stack</title>
+    <link>http://chrisdornan.com/posts/2020-04-11-cabal-and-stack.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Sat, 11 Apr 2020 00:00:00 UT</pubDate>
+    <guid>http://chrisdornan.com/posts/2020-04-11-cabal-and-stack.html</guid>
+    <dc:creator>Chris Dornan</dc:creator>
+</item>
+<item>
+    <title>Fixing Language Extensions</title>
+    <link>http://chrisdornan.com/posts/2020-04-10-extension-syntax.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Fri, 10 Apr 2020 00:00:00 UT</pubDate>
+    <guid>http://chrisdornan.com/posts/2020-04-10-extension-syntax.html</guid>
+    <dc:creator>Chris Dornan</dc:creator>
+</item>
+<item>
+    <title>Language Extensions</title>
+    <link>http://chrisdornan.com/posts/2020-04-09-language-extensions.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Thu, 09 Apr 2020 00:00:00 UT</pubDate>
+    <guid>http://chrisdornan.com/posts/2020-04-09-language-extensions.html</guid>
+    <dc:creator>Chris Dornan</dc:creator>
+</item>
+<item>
     <title>Managing Anxiety</title>
     <link>http://chrisdornan.com/posts/2020-04-08-managing-anxiety.html</link>
     <description><![CDATA[This is the post description]]></description>
@@ -62,30 +86,6 @@
     <description><![CDATA[This is the post description]]></description>
     <pubDate>Thu, 02 Apr 2020 00:00:00 UT</pubDate>
     <guid>http://chrisdornan.com/posts/2020-04-02-series.html</guid>
-    <dc:creator>Chris Dornan</dc:creator>
-</item>
-<item>
-    <title>Hell</title>
-    <link>http://chrisdornan.com/posts/2020-04-01-hell.html</link>
-    <description><![CDATA[This is the post description]]></description>
-    <pubDate>Wed, 01 Apr 2020 00:00:00 UT</pubDate>
-    <guid>http://chrisdornan.com/posts/2020-04-01-hell.html</guid>
-    <dc:creator>Chris Dornan</dc:creator>
-</item>
-<item>
-    <title>Stringing Along</title>
-    <link>http://chrisdornan.com/posts/2020-03-31-stringing.html</link>
-    <description><![CDATA[This is the post description]]></description>
-    <pubDate>Tue, 31 Mar 2020 00:00:00 UT</pubDate>
-    <guid>http://chrisdornan.com/posts/2020-03-31-stringing.html</guid>
-    <dc:creator>Chris Dornan</dc:creator>
-</item>
-<item>
-    <title>Why Haskell Matters</title>
-    <link>http://chrisdornan.com/posts/2020-03-30-matters.html</link>
-    <description><![CDATA[This is the post description]]></description>
-    <pubDate>Mon, 30 Mar 2020 00:00:00 UT</pubDate>
-    <guid>http://chrisdornan.com/posts/2020-03-30-matters.html</guid>
     <dc:creator>Chris Dornan</dc:creator>
 </item>
 
