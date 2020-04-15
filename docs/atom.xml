@@ -8,8 +8,16 @@
         <name>Chris Dornan</name>
         <email>chris@chrisdornan.com</email>
     </author>
-    <updated>2020-04-14T00:00:00Z</updated>
+    <updated>2020-04-15T00:00:00Z</updated>
     <entry>
+    <title>Warnings</title>
+    <link href="http://chrisdornan.com/posts/2020-04-15-warnings.html" />
+    <id>http://chrisdornan.com/posts/2020-04-15-warnings.html</id>
+    <published>2020-04-15T00:00:00Z</published>
+    <updated>2020-04-15T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
     <title>Equational Reasoning</title>
     <link href="http://chrisdornan.com/posts/2020-04-14-equations.html" />
     <id>http://chrisdornan.com/posts/2020-04-14-equations.html</id>
@@ -79,14 +87,6 @@
     <id>http://chrisdornan.com/posts/2020-04-06-pointless.html</id>
     <published>2020-04-06T00:00:00Z</published>
     <updated>2020-04-06T00:00:00Z</updated>
-    <summary type="html"><![CDATA[This is the post description]]></summary>
-</entry>
-<entry>
-    <title>Functor</title>
-    <link href="http://chrisdornan.com/posts/2020-04-05-sr-Functor.html" />
-    <id>http://chrisdornan.com/posts/2020-04-05-sr-Functor.html</id>
-    <published>2020-04-05T00:00:00Z</published>
-    <updated>2020-04-05T00:00:00Z</updated>
     <summary type="html"><![CDATA[This is the post description]]></summary>
 </entry>
 
