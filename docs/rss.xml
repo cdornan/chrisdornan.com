@@ -7,8 +7,16 @@
         <description><![CDATA[Chris Dornan's blog]]></description>
         <atom:link href="http://chrisdornan.com/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Thu, 16 Apr 2020 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Fri, 17 Apr 2020 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Deriving Worlds</title>
+    <link>http://chrisdornan.com/posts/2020-04-17-deriving.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Fri, 17 Apr 2020 00:00:00 UT</pubDate>
+    <guid>http://chrisdornan.com/posts/2020-04-17-deriving.html</guid>
+    <dc:creator>Chris Dornan</dc:creator>
+</item>
+<item>
     <title>Structures for Free</title>
     <link>http://chrisdornan.com/posts/2020-04-16-structures-for-free.html</link>
     <description><![CDATA[This is the post description]]></description>
@@ -78,14 +86,6 @@
     <description><![CDATA[This is the post description]]></description>
     <pubDate>Wed, 08 Apr 2020 00:00:00 UT</pubDate>
     <guid>http://chrisdornan.com/posts/2020-04-08-managing-anxiety.html</guid>
-    <dc:creator>Chris Dornan</dc:creator>
-</item>
-<item>
-    <title>Getting your Version</title>
-    <link>http://chrisdornan.com/posts/2020-04-07-versions.html</link>
-    <description><![CDATA[This is the post description]]></description>
-    <pubDate>Tue, 07 Apr 2020 00:00:00 UT</pubDate>
-    <guid>http://chrisdornan.com/posts/2020-04-07-versions.html</guid>
     <dc:creator>Chris Dornan</dc:creator>
 </item>
 
