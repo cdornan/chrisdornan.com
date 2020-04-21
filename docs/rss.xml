@@ -7,8 +7,16 @@
         <description><![CDATA[Chris Dornan's blog]]></description>
         <atom:link href="http://chrisdornan.com/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Sat, 18 Apr 2020 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Sun, 19 Apr 2020 00:00:00 UT</lastBuildDate>
         <item>
+    <title>On Style</title>
+    <link>http://chrisdornan.com/posts/2020-04-19-style.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Sun, 19 Apr 2020 00:00:00 UT</pubDate>
+    <guid>http://chrisdornan.com/posts/2020-04-19-style.html</guid>
+    <dc:creator>Chris Dornan</dc:creator>
+</item>
+<item>
     <title>RecordWildCards</title>
     <link>http://chrisdornan.com/posts/2020-04-18-er-RecordWildCards.html</link>
     <description><![CDATA[This is the post description]]></description>
@@ -78,14 +86,6 @@
     <description><![CDATA[This is the post description]]></description>
     <pubDate>Fri, 10 Apr 2020 00:00:00 UT</pubDate>
     <guid>http://chrisdornan.com/posts/2020-04-10-extension-syntax.html</guid>
-    <dc:creator>Chris Dornan</dc:creator>
-</item>
-<item>
-    <title>Language Extensions</title>
-    <link>http://chrisdornan.com/posts/2020-04-09-language-extensions.html</link>
-    <description><![CDATA[This is the post description]]></description>
-    <pubDate>Thu, 09 Apr 2020 00:00:00 UT</pubDate>
-    <guid>http://chrisdornan.com/posts/2020-04-09-language-extensions.html</guid>
     <dc:creator>Chris Dornan</dc:creator>
 </item>
 
