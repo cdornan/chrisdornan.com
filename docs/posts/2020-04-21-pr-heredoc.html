@@ -85,16 +85,20 @@
 </div>
 <hr />
 
-    <div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1"></a>main <span class="ot">=</span> <span class="fu">putStr</span> [here|</span>
-<span id="cb1-2"><a href="#cb1-2"></a>heredoc is an insanely simple but useful package that makes</span>
-<span id="cb1-3"><a href="#cb1-3"></a>the most straightforward use of `QuasiQuotes`. If you need</span>
-<span id="cb1-4"><a href="#cb1-4"></a>to embed a block of text in a module then `heredoc` is your</span>
-<span id="cb1-5"><a href="#cb1-5"></a>friend.</span>
-<span id="cb1-6"><a href="#cb1-6"></a>|]</span></code></pre></div>
+    <div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1"></a><span class="ot">{-# LANGUAGE QuasiQuotes #-}</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="kw">import</span> <span class="dt">Text.Heredoc</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>main <span class="ot">=</span> <span class="fu">putStr</span> [here|</span>
+<span id="cb1-6"><a href="#cb1-6"></a>heredoc is an insanely simple but useful package that makes</span>
+<span id="cb1-7"><a href="#cb1-7"></a>the most straightforward use of `QuasiQuotes`. If you need</span>
+<span id="cb1-8"><a href="#cb1-8"></a>to embed a block of text in a module then `heredoc` is your</span>
+<span id="cb1-9"><a href="#cb1-9"></a>friend.</span>
+<span id="cb1-10"><a href="#cb1-10"></a>|]</span></code></pre></div>
 <p><code>heredocs</code> has a couple of extra tricks. The beautifully clear and simple <a href="https://hackage.haskell.org/package/heredoc-0.2.0.0/docs/Text-Heredoc.html"><code>heredoc</code> Haddocks</a> have the details.</p>
     <hr>
     <p><i>Got an issue with any of this?</i>
-       <a href="https://github.com/cdornan/cd-blog/issues/25">Please share</a>
+       <a href="https://github.com/cdornan/cd-blog/issues/26">Please share</a>
        or drop me a line (see below).
 <div class="uk-margin-small-top"></div>
 </article>
