@@ -8,8 +8,16 @@
         <name>Chris Dornan</name>
         <email>chris@chrisdornan.com</email>
     </author>
-    <updated>2020-04-19T00:00:00Z</updated>
+    <updated>2020-04-20T00:00:00Z</updated>
     <entry>
+    <title>QuasiQuotes</title>
+    <link href="http://chrisdornan.com/posts/2020-04-20-er-QuasiQuotes.html" />
+    <id>http://chrisdornan.com/posts/2020-04-20-er-QuasiQuotes.html</id>
+    <published>2020-04-20T00:00:00Z</published>
+    <updated>2020-04-20T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
     <title>On Style</title>
     <link href="http://chrisdornan.com/posts/2020-04-19-style.html" />
     <id>http://chrisdornan.com/posts/2020-04-19-style.html</id>
@@ -79,14 +87,6 @@
     <id>http://chrisdornan.com/posts/2020-04-11-cabal-and-stack.html</id>
     <published>2020-04-11T00:00:00Z</published>
     <updated>2020-04-11T00:00:00Z</updated>
-    <summary type="html"><![CDATA[This is the post description]]></summary>
-</entry>
-<entry>
-    <title>Fixing Language Extensions</title>
-    <link href="http://chrisdornan.com/posts/2020-04-10-extension-syntax.html" />
-    <id>http://chrisdornan.com/posts/2020-04-10-extension-syntax.html</id>
-    <published>2020-04-10T00:00:00Z</published>
-    <updated>2020-04-10T00:00:00Z</updated>
     <summary type="html"><![CDATA[This is the post description]]></summary>
 </entry>
 
