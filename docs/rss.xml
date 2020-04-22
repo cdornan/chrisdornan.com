@@ -7,8 +7,16 @@
         <description><![CDATA[Chris Dornan's blog]]></description>
         <atom:link href="http://chrisdornan.com/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Tue, 21 Apr 2020 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Apr 2020 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Cults</title>
+    <link>http://chrisdornan.com/posts/2020-04-22-critical-analysis.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Wed, 22 Apr 2020 00:00:00 UT</pubDate>
+    <guid>http://chrisdornan.com/posts/2020-04-22-critical-analysis.html</guid>
+    <dc:creator>Chris Dornan</dc:creator>
+</item>
+<item>
     <title>heredoc</title>
     <link>http://chrisdornan.com/posts/2020-04-21-pr-heredoc.html</link>
     <description><![CDATA[This is the post description]]></description>
@@ -78,14 +86,6 @@
     <description><![CDATA[This is the post description]]></description>
     <pubDate>Mon, 13 Apr 2020 00:00:00 UT</pubDate>
     <guid>http://chrisdornan.com/posts/2020-04-13-vitality.html</guid>
-    <dc:creator>Chris Dornan</dc:creator>
-</item>
-<item>
-    <title>Show Offs</title>
-    <link>http://chrisdornan.com/posts/2020-04-12-show.html</link>
-    <description><![CDATA[This is the post description]]></description>
-    <pubDate>Sun, 12 Apr 2020 00:00:00 UT</pubDate>
-    <guid>http://chrisdornan.com/posts/2020-04-12-show.html</guid>
     <dc:creator>Chris Dornan</dc:creator>
 </item>
 

@@ -8,8 +8,16 @@
         <name>Chris Dornan</name>
         <email>chris@chrisdornan.com</email>
     </author>
-    <updated>2020-04-21T00:00:00Z</updated>
+    <updated>2020-04-22T00:00:00Z</updated>
     <entry>
+    <title>Cults</title>
+    <link href="http://chrisdornan.com/posts/2020-04-22-critical-analysis.html" />
+    <id>http://chrisdornan.com/posts/2020-04-22-critical-analysis.html</id>
+    <published>2020-04-22T00:00:00Z</published>
+    <updated>2020-04-22T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
     <title>heredoc</title>
     <link href="http://chrisdornan.com/posts/2020-04-21-pr-heredoc.html" />
     <id>http://chrisdornan.com/posts/2020-04-21-pr-heredoc.html</id>
@@ -79,14 +87,6 @@
     <id>http://chrisdornan.com/posts/2020-04-13-vitality.html</id>
     <published>2020-04-13T00:00:00Z</published>
     <updated>2020-04-13T00:00:00Z</updated>
-    <summary type="html"><![CDATA[This is the post description]]></summary>
-</entry>
-<entry>
-    <title>Show Offs</title>
-    <link href="http://chrisdornan.com/posts/2020-04-12-show.html" />
-    <id>http://chrisdornan.com/posts/2020-04-12-show.html</id>
-    <published>2020-04-12T00:00:00Z</published>
-    <updated>2020-04-12T00:00:00Z</updated>
     <summary type="html"><![CDATA[This is the post description]]></summary>
 </entry>
 
