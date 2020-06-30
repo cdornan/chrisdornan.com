@@ -8,8 +8,24 @@
         <name>Chris Dornan</name>
         <email>chris@chrisdornan.com</email>
     </author>
-    <updated>2020-04-23T00:00:00Z</updated>
+    <updated>2020-06-30T00:00:00Z</updated>
     <entry>
+    <title>Type Errors</title>
+    <link href="http://chrisdornan.com/posts/2020-06-30-type-errors.html" />
+    <id>http://chrisdornan.com/posts/2020-06-30-type-errors.html</id>
+    <published>2020-06-30T00:00:00Z</published>
+    <updated>2020-06-30T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>Good Package Documentation</title>
+    <link href="http://chrisdornan.com/posts/2020-06-29-yao-documentation.html" />
+    <id>http://chrisdornan.com/posts/2020-06-29-yao-documentation.html</id>
+    <published>2020-06-29T00:00:00Z</published>
+    <updated>2020-06-29T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
     <title>Class</title>
     <link href="http://chrisdornan.com/posts/2020-04-23-class.html" />
     <id>http://chrisdornan.com/posts/2020-04-23-class.html</id>
@@ -71,22 +87,6 @@
     <id>http://chrisdornan.com/posts/2020-04-16-structures-for-free.html</id>
     <published>2020-04-16T00:00:00Z</published>
     <updated>2020-04-16T00:00:00Z</updated>
-    <summary type="html"><![CDATA[This is the post description]]></summary>
-</entry>
-<entry>
-    <title>Warnings</title>
-    <link href="http://chrisdornan.com/posts/2020-04-15-warnings.html" />
-    <id>http://chrisdornan.com/posts/2020-04-15-warnings.html</id>
-    <published>2020-04-15T00:00:00Z</published>
-    <updated>2020-04-15T00:00:00Z</updated>
-    <summary type="html"><![CDATA[This is the post description]]></summary>
-</entry>
-<entry>
-    <title>Equational Reasoning</title>
-    <link href="http://chrisdornan.com/posts/2020-04-14-equations.html" />
-    <id>http://chrisdornan.com/posts/2020-04-14-equations.html</id>
-    <published>2020-04-14T00:00:00Z</published>
-    <updated>2020-04-14T00:00:00Z</updated>
     <summary type="html"><![CDATA[This is the post description]]></summary>
 </entry>
 
