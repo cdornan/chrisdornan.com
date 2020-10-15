@@ -74,7 +74,7 @@
 <p>The only way tools are going to fill in missing values is by following conventions. The convention that I want is that if an upper bound is missing from a cabal file I want my tool to find the current latest version of the package on Hackage and upper-bound to all packages that are PVP-compatible with that latest package. If folks want other conventions then we can provide for those also (but that seems to be the obvious convention to me).</p>
 <h2 id="no-really-how">No, really, how?</h2>
 <p>For this to work we need a way of injecting this filling in process into the workflow of Stack/Stackage developers especially. Many of us use <a href="https://hackage.haskell.org/package/hpack"><em>hpack</em></a> which could be adjusted to fill in the upper bounds while generating the cabal files from the <code>package.yaml</code> files.</p>
-<p>Time to move on already.</p>
+<p>Time to move on.</p>
     <hr>
     <p><i>Got an issue with any of this?</i>
        <a href="https://github.com/cdornan/cd-blog/issues/34">Please share</a>
