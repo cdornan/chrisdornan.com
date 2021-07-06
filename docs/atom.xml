@@ -8,8 +8,16 @@
         <name>Chris Dornan</name>
         <email>chris@chrisdornan.com</email>
     </author>
-    <updated>2020-10-15T00:00:00Z</updated>
+    <updated>2021-07-06T00:00:00Z</updated>
     <entry>
+    <title>hs</title>
+    <link href="http://chrisdornan.com/posts/2021-07-06-hs.html" />
+    <id>http://chrisdornan.com/posts/2021-07-06-hs.html</id>
+    <published>2021-07-06T00:00:00Z</published>
+    <updated>2021-07-06T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
     <title>PVP</title>
     <link href="http://chrisdornan.com/posts/2020-10-15-pvp.html" />
     <id>http://chrisdornan.com/posts/2020-10-15-pvp.html</id>
@@ -79,14 +87,6 @@
     <id>http://chrisdornan.com/posts/2020-04-19-style.html</id>
     <published>2020-04-19T00:00:00Z</published>
     <updated>2020-04-19T00:00:00Z</updated>
-    <summary type="html"><![CDATA[This is the post description]]></summary>
-</entry>
-<entry>
-    <title>RecordWildCards</title>
-    <link href="http://chrisdornan.com/posts/2020-04-18-er-RecordWildCards.html" />
-    <id>http://chrisdornan.com/posts/2020-04-18-er-RecordWildCards.html</id>
-    <published>2020-04-18T00:00:00Z</published>
-    <updated>2020-04-18T00:00:00Z</updated>
     <summary type="html"><![CDATA[This is the post description]]></summary>
 </entry>
 
