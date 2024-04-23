@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>chrisdornan.com</title>
+    <link href="http://chrisdornan.com/atom.xml" rel="self" />
+    <link href="http://chrisdornan.com" />
+    <id>http://chrisdornan.com/atom.xml</id>
+    <author>
+        <name>Chris Dornan</name>
+        <email>chris@chrisdornan.com</email>
+    </author>
+    <updated>2021-07-06T00:00:00Z</updated>
+    <entry>
+    <title>hs</title>
+    <link href="http://chrisdornan.com/posts/2021-07-06-hs.html" />
+    <id>http://chrisdornan.com/posts/2021-07-06-hs.html</id>
+    <published>2021-07-06T00:00:00Z</published>
+    <updated>2021-07-06T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>PVP</title>
+    <link href="http://chrisdornan.com/posts/2020-10-15-pvp.html" />
+    <id>http://chrisdornan.com/posts/2020-10-15-pvp.html</id>
+    <published>2020-10-15T00:00:00Z</published>
+    <updated>2020-10-15T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>Dogfooding Type Error Advice</title>
+    <link href="http://chrisdornan.com/posts/2020-07-01-dogfooding-errors.html" />
+    <id>http://chrisdornan.com/posts/2020-07-01-dogfooding-errors.html</id>
+    <published>2020-07-01T00:00:00Z</published>
+    <updated>2020-07-01T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>Type Errors</title>
+    <link href="http://chrisdornan.com/posts/2020-06-30-type-errors.html" />
+    <id>http://chrisdornan.com/posts/2020-06-30-type-errors.html</id>
+    <published>2020-06-30T00:00:00Z</published>
+    <updated>2020-06-30T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>Good Package Documentation</title>
+    <link href="http://chrisdornan.com/posts/2020-06-29-yao-documentation.html" />
+    <id>http://chrisdornan.com/posts/2020-06-29-yao-documentation.html</id>
+    <published>2020-06-29T00:00:00Z</published>
+    <updated>2020-06-29T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>Class</title>
+    <link href="http://chrisdornan.com/posts/2020-04-23-class.html" />
+    <id>http://chrisdornan.com/posts/2020-04-23-class.html</id>
+    <published>2020-04-23T00:00:00Z</published>
+    <updated>2020-04-23T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>Cults</title>
+    <link href="http://chrisdornan.com/posts/2020-04-22-critical-analysis.html" />
+    <id>http://chrisdornan.com/posts/2020-04-22-critical-analysis.html</id>
+    <published>2020-04-22T00:00:00Z</published>
+    <updated>2020-04-22T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>heredoc</title>
+    <link href="http://chrisdornan.com/posts/2020-04-21-pr-heredoc.html" />
+    <id>http://chrisdornan.com/posts/2020-04-21-pr-heredoc.html</id>
+    <published>2020-04-21T00:00:00Z</published>
+    <updated>2020-04-21T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>QuasiQuotes</title>
+    <link href="http://chrisdornan.com/posts/2020-04-20-er-QuasiQuotes.html" />
+    <id>http://chrisdornan.com/posts/2020-04-20-er-QuasiQuotes.html</id>
+    <published>2020-04-20T00:00:00Z</published>
+    <updated>2020-04-20T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>On Style</title>
+    <link href="http://chrisdornan.com/posts/2020-04-19-style.html" />
+    <id>http://chrisdornan.com/posts/2020-04-19-style.html</id>
+    <published>2020-04-19T00:00:00Z</published>
+    <updated>2020-04-19T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+
+</feed>
